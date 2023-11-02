@@ -1,0 +1,11 @@
+services:
+  sql-data:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: shoponline
+    restart: unless-stopped  
+    ports:
+      - "1433:1433"
+    environment:
+      - SA_PASSWORD=masterkey@A
+      - ACCEPT_EULA=Y
+      - HOMEBREW_NO_ENV_FILTERING=1      
