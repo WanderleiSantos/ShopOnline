@@ -29,4 +29,9 @@
       <ProjectReference Include="..\ShopOnline.Models\ShopOnline.Models.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Controllers\WeatherForecastController.cs" />
+      <Compile Remove="WeatherForecast.cs" />
+    </ItemGroup>
+
 </Project>
